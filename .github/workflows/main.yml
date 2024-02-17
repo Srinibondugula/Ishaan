@@ -1,4 +1,4 @@
-name: A workflow for my Hello World file
+name: A workflow for My Demo website
 on: push
 jobs:
   build-job:
@@ -7,6 +7,10 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       name: Check out code
-    - name: Check out code
+    - name: Echo Hello World
       run: echo Hello World
-      name: Index.html
+    - name: Index.html Content
+      run: |
+         echo "This is line1"
+         echo "This is line2"
+         cat index.html
