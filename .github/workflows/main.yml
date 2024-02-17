@@ -1,9 +1,5 @@
 name: A workflow for My Demo website
-on: 
-  workflow_dispatch:
-  push:
-    paths: ['**', '!.github/**']
- 
+on: push
 jobs:
   build-job:
     name: Hello world action
